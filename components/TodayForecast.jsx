@@ -23,7 +23,7 @@ const TodayForecast = () => {
   return (
     <>
       {todayForecast !== undefined && todayForecast.length === 1 && (
-        <div className='container mx-auto bg-gray-100 rounded-md shadow border p-8 center min-h-[350px]'>
+        <div className='md:container md:mx-auto bg-gray-100 rounded-md shadow border p-8 m-10 center min-h-[350px]'>
           <h2>
             {city}
             <span className='text-xs'> Today</span>
