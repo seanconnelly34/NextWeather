@@ -39,7 +39,7 @@ const TodayForecast = () => {
             leaveFrom='opacity-100 rotate-0 scale-100 '
             leaveTo='opacity-0 scale-95 '
           >
-            {city ? (
+            {isShowing ? (
               <div className='mt-12'>
                 <div className='text-orange-400 text-9xl flex justify-center'>
                   <FontAwesomeIcon
@@ -56,9 +56,11 @@ const TodayForecast = () => {
                 </div>
               </div>
             ) : (
-              <div className='mt-12 text-orange-400 text-9xl flex justify-center'>
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
-              </div>
+              //kinda cool effect
+              //   <div className='mt-12 text-orange-400 text-9xl flex justify-center'>
+              //     <FontAwesomeIcon icon={faMagnifyingGlass} />
+              //   </div>
+              <p>&nbsp;</p>
             )}
           </Transition>
 
